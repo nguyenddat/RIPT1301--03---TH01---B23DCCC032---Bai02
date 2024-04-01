@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#student-table {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#student-table th, #student-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#student-table th {
+    background-color: #f2f2f2;
+}
+
+#student-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #aa2c13;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #b85024;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

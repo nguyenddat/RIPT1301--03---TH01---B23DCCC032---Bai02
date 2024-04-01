@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị</title>
+    <link rel="stylesheet" href="quantri.css">
+</head>
+<body>
+    <h2>Quản lý sinh viên</h2>
+    <button onclick="openAddForm()">Thêm mới</button>
+
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Tuổi</th>
+                <th>Địa chỉ</th>
+                <th>SDT</th>
+                <th>Email</th>
+                <th>Lớp học</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="student-list">
+            <!-- Dữ liệu sinh viên sẽ được thêm vào đây bằng JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Form thêm mới sinh viên -->
+    <div id="add-form" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddForm()">&times;</span>
+            <h2>Thêm mới sinh viên</h2>
+            <form id="add-student-form">
+                <input type="text" id="name" placeholder="Tên">
+                <input type="number" id="age" placeholder="Tuổi">
+                <input type="text" id="address" placeholder="Địa chỉ">
+                <input type="text" id="phone" placeholder="Số điện thoại">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="class" placeholder="Lớp học">
+                <button type="submit">Thêm</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="quantri.js"></script>
+</body>
+</html>
